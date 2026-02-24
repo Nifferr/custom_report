@@ -1,0 +1,24 @@
+# Guymager RunStats - ENDED
+ended_utc=%yyyy%-%MM%-%dd%T%hh%:%mm%:%ss%Z
+version=%Version%
+host=%HostName%
+status=ENDED
+forensic_root_evidence=/mnt/evidence
+forensic_root_target=/mnt/target
+forensic_root_backup=/mnt/backup
+
+%DEVICE_BLOCK%
+[device_final]
+dev=%Dev%
+state=%State%
+extended_state=%ExtendedState%
+progress_pct=%Progress%
+bad_sectors=%BadSectors%
+image=%Image%
+info_file=%InfoFile%
+telemetry_classification_hint=EVIDENCE:/mnt/evidence TARGET:/mnt/target BACKUP:/mnt/backup
+verify_src=%VerifySrc%
+verify_dst=%VerifyDst%
+calc_sha256=%CalcSHA256%
+[/device_final]
+%DEVICE_BLOCK%

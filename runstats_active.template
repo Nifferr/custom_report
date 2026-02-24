@@ -1,0 +1,46 @@
+# Guymager RunStats - ACTIVE
+# Gerado automaticamente para telemetria forense contínua.
+updated_utc=%yyyy%-%MM%-%dd%T%hh%:%mm%:%ss%Z
+version=%Version%
+host=%HostName%
+mac=%MacAddr%
+forensic_root_evidence=/mnt/evidence
+forensic_root_target=/mnt/target
+forensic_root_backup=/mnt/backup
+
+%DEVICE_BLOCK%
+[device]
+dev=%Dev%
+state=%State%
+extended_state=%ExtendedState%
+local_device=%LocalDevice%
+serial=%Serial%
+model=%Model%
+size_bytes=%Size%
+size_human=%SizeHumanNoSep%
+current_speed_mibs=%CurrentSpeed%
+avg_speed_mibs=%AverageSpeed%
+progress_pct=%Progress%
+time_remaining=%TimeRemaining%
+bad_sectors=%BadSectors%
+hidden_areas=%HiddenAreas%
+split_file_size=%SplitFileSize%
+verify_src=%VerifySrc%
+verify_dst=%VerifyDst%
+calc_md5=%CalcMD5%
+calc_sha1=%CalcSHA1%
+calc_sha256=%CalcSHA256%
+clone=%Clone%
+duplicate=%Duplicate%
+case_number=%CaseNumber%
+examiner=%Examiner%
+evidence_number=%EvidenceNumber%
+description=%Description%
+notes=%Notes%
+image=%Image%
+info_file=%InfoFile%
+telemetry_classification_hint=EVIDENCE:/mnt/evidence TARGET:/mnt/target BACKUP:/mnt/backup
+user_field=%UserField%
+add_state=%AddStateInfo%
+[/device]
+%DEVICE_BLOCK%
